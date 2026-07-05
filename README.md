@@ -38,6 +38,23 @@ MiniHub 是一个基于 Spring Boot 4 的内容社区后端项目，用于学习
 
 1. 启动 MySQL
 2. 启动 Redis
-
 ```bash
 docker start minihub-redis
+```
+3. 复制配置文件
+src/main/resources/application-dev.example.yml
+复制为
+src/main/resources/application-dev.yml
+修改本地数据库密码
+4. 启动项目
+.\mvnw.cmd spring-boot:run
+
+或打包后运行：
+
+.\mvnw.cmd clean package -DskipTests
+java -jar target\minihub-java-0.0.1-SNAPSHOT.jar
+5. 接口文档
+
+启动项目后访问：
+
+http://localhost:8080/api/swagger-ui/index.html
