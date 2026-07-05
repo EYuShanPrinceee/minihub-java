@@ -1,0 +1,23 @@
+# Maven build output
+target/
+
+# Logs
+logs/
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local environment config
+src/main/resources/application-dev.yml
+src/main/resources/application-local.yml
+
+# Environment files
+.env
+.env.*

@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: minihub-java
+
+  profiles:
+    active: dev
+
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
+  jwt:
+    expires-in-seconds: 604800

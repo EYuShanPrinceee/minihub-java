@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: "${MYSQL_URL}"
+    username: "${MYSQL_USERNAME}"
+    password: "${MYSQL_PASSWORD}"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  data:
+    redis:
+      host: "${REDIS_HOST}"
+      port: ${REDIS_PORT:6379}
+      timeout: 3000ms
+
+app:
+  jwt:
+    secret: "${JWT_SECRET}"
+
+logging:
+  level:
+    root: info
+    com.minihub: info
+  file:
+    name: logs/minihub-java-prod.log
